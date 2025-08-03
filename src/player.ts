@@ -72,6 +72,14 @@ export class Player extends Actor {
 		let moveDir: Vector = Vector.Zero
 		let speed: number = 1
 
+		const ignoredKeys: Keys[] = [Keys.ShiftLeft, Keys.ShiftRight]
+
+		if (keyboard.getKeys().length > 2 && ignoredKeys.every(key => !keyboard.getKeys().includes(key))) {
+			moveDir = Vector.Zero;
+			this.movementState = MovementStates.Idle;
+			this.animationManager.goToIdle(this.direction);
+			return;
+		}
 		if (keyboard.isHeld(Keys.Down) || keyboard.isHeld(Keys.S)) {
 			this.direction = Directions.Down
 			moveDir = moveDir.add(Vector.Down)
@@ -88,7 +96,8 @@ export class Player extends Actor {
 			this.direction = Directions.Left
 			moveDir = moveDir.add(Vector.Left)
 		}
-		console.log(keyboard.getKeys())
+
+
 		if (keyboard.isHeld(Keys.ShiftLeft) || keyboard.isHeld(Keys.ShiftRight)) { speed *= 1.3 } // Sprint
 
 		if (!moveDir.equals(Vector.Zero)) {
