@@ -1,7 +1,6 @@
 import { Color, DisplayMode, Engine, FadeInOut, vec } from "excalibur";
 import { loader, Resources } from "./resources";
 import { MyLevel } from "./level";
-import animations from "./Animations/animations.json"
 
 // Goal is to keep main.ts small and just enough to configure the engine
 
@@ -27,7 +26,6 @@ game.start('start', { // name of the start scene 'start'
   })
 }).then(() => {
   Resources.tiledMap.addToScene(game.currentScene, {pos: vec(0, 0 )});
-  console.log(animations)
   game.screen.canvas.style.imageRendering = "pixelated";
   game.graphicsContext.scale(3, 3)
 });
