@@ -1,0 +1,196 @@
+{
+    "idle": {
+        "down": {
+            "name": "idle-down",
+            "frames": [
+                {"x": 0, "y": 0},
+                {"x": 1, "y": 0}
+            ],
+            "dpf": 300,
+            "priority": 0,
+            "strategy": "Loop"
+        },   
+        "up": {
+            "name": "idle-up",
+            "frames": [
+                {"x": 0, "y": 4},
+                {"x": 1, "y": 4}
+            ],
+            "dpf": 300,
+            "priority": 0,
+            "strategy": "Loop"
+        }, 
+        "left": {
+            "name": "idle-left",
+            "frames": [
+                {"x": 0, "y": 6},
+                {"x": 1, "y": 6}
+            ],
+            "dpf": 300,
+            "priority": 0,
+            "strategy": "Loop"
+        }, 
+        "right": {
+            "name": "idle-right",
+            "frames": [
+                {"x": 0, "y": 2},
+                {"x": 1, "y": 2}
+            ],
+            "dpf": 300,
+            "priority": 0,
+            "strategy": "Loop"
+        },
+        "up_left": {
+            "name": "idle-up_left",
+            "frames": [
+                {"x": 0, "y": 5},
+                {"x": 1, "y": 5}
+            ],
+            "dpf": 300,
+            "priority": 0,
+            "strategy": "Loop"   
+        },
+        "up_right": {
+            "name": "idle-up_right",
+            "frames": [
+                {"x": 0, "y": 3},
+                {"x": 1, "y": 3}
+            ],
+            "dpf": 300,
+            "priority": 0,
+            "strategy": "Loop"   
+        },
+        "down_left": {
+            "name": "idle-down_left",
+            "frames": [
+                {"x": 0, "y": 7},
+                {"x": 1, "y": 7}
+            ],
+            "dpf": 300,
+            "priority": 0,
+            "strategy": "Loop"   
+        },
+        "down_right": {
+            "name": "idle-down_right",
+            "frames": [
+                {"x": 0, "y": 1},
+                {"x": 1, "y": 1}
+            ],
+            "dpf": 300,
+            "priority": 0,
+            "strategy": "Loop"   
+        }
+    },
+    "walk": {
+        "down": {
+            "name": "walk-down",
+            "frames": [
+                {"x": 1, "y": 0},
+                {"x": 2, "y": 0},
+                {"x": 1, "y": 0},
+                {"x": 3, "y": 0}
+            ],
+            "dpf": 150,
+            "priority": 1,
+            "strategy": "Loop"
+        },   
+        "up": {
+            "name": "walk-up",
+            "frames": [
+                {"x": 1, "y": 4},
+                {"x": 2, "y": 4},
+                {"x": 1, "y": 4},
+                {"x": 3, "y": 4}
+            ],
+            "dpf": 150,
+            "priority": 1,
+            "strategy": "Loop"
+        }, 
+        "left": {
+            "name": "walk-left",
+            "frames": [
+                {"x": 1, "y": 6},
+                {"x": 2, "y": 6},
+                {"x": 1, "y": 6},
+                {"x": 3, "y": 6}
+            ],
+            "dpf": 150,
+            "priority": 1,
+            "strategy": "Loop"
+        }, 
+        "right": {
+            "name": "walk-right",
+            "frames": [
+                {"x": 1, "y": 2},
+                {"x": 2, "y": 2},
+                {"x": 1, "y": 2},
+                {"x": 3, "y": 2}
+            ],
+            "dpf": 150,
+            "priority": 1,
+            "strategy": "Loop"
+        },
+        "up_left": {
+            "name": "walk-up_left",
+            "frames": [
+                {"x": 1, "y": 5},
+                {"x": 2, "y": 5},
+                {"x": 1, "y": 5},
+                {"x": 3, "y": 5}
+            ],
+            "dpf": 150,
+            "priority": 2,
+            "strategy": "Loop"   
+        },
+        "up_right": {
+            "name": "walk-up_right",
+            "frames": [
+                {"x": 1, "y": 3},
+                {"x": 2, "y": 3},
+                {"x": 1, "y": 3},
+                {"x": 3, "y": 3}
+            ],
+            "dpf": 150,
+            "priority": 2,
+            "strategy": "Loop"   
+        },
+        "down_left": {
+            "name": "walk-down_left",
+            "frames": [
+                {"x": 1, "y": 7},
+                {"x": 2, "y": 7},
+                {"x": 1, "y": 7},
+                {"x": 3, "y": 7}
+            ],
+            "dpf": 150,
+            "priority": 2,
+            "strategy": "Loop"   
+        },
+        "down_right": {
+            "name": "walk-down_right",
+            "frames": [
+                {"x": 1, "y": 1},
+                {"x": 2, "y": 1},
+                {"x": 1, "y": 1},
+                {"x": 3, "y": 1}
+            ],
+            "dpf": 150,
+            "priority": 2,
+            "strategy": "Loop"   
+        }
+    },
+    "melee": {
+        "down": {
+            "name": "melee-down",
+            "frames": [
+                {"x": 4, "y": 0},
+                {"x": 5, "y": 0},
+                {"x": 6, "y": 0},
+                {"x": 7, "y": 0}
+            ],
+            "dpf": 150,
+            "priority": 10,
+            "strategy": "Freeze"
+        }
+    }
+}
